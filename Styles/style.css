@@ -1,0 +1,231 @@
+#header {
+	color:#000000;
+	width:960px;
+	margin:0 auto;
+	height: 200px;
+	background-color: #fff;
+}
+html { 
+  background: url(../images/background5.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.left {
+	display:inline-block;
+}
+
+.right {
+	float:right;
+	display:inline-block;
+}
+
+#wrapper {
+	width:960px;
+	margin:0 auto;
+	font-family:Verdana, sans-serif, Arial;
+}
+
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	width:100%;
+	min-width:960px;		/* Minimum width of layout */
+	font-size:90%;
+} 
+
+fieldset {
+	width:70%;
+	margin: 0 auto;
+}
+
+ol {
+ list-style: none;
+ width:500px;
+}
+
+ul {
+ list-style: none;
+}
+
+
+li {
+	padding:5px;
+}
+
+/* primary structure */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* Below are the Sections for parallax scrolling on home and about pages */
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("../Images/IMG_8412.jpg");
+  background-size:960px;
+}
+section.module.parallax-2 {
+  background-image: url("../Images/parallax2.jpg");
+   background-size:960px;
+}
+section.module.parallax-3 {
+  background-image: url("../images/parallax3.jpg");
+   background-size:960px;
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+section.module.parallax h3 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 36px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#content {
+float:left;
+width:960px;
+min-height: 800px;
+background-color:#efefef;
+text-align:center;
+}
+
+
+
+/* Resets */
+ul {
+    padding:0;
+    margin:0 0 20px 0;
+    list-style:none;
+}
+h1, h2 {
+    padding:0;
+    margin:0 0 20px 0;
+    font-weight:normal;
+}
+p {
+    padding:0;
+    margin:0 0 20px 0;
+}
+a:link, a:visited {
+    text-decoration:underline;
+    color:#000;
+}
+a:hover {
+    text-decoration:none;
+}
+ul li {
+    padding:5px 0;
+}
+ul li input[type="text"], ul li input[type="password"] {
+    width:200px;
+}
+/* Headers */
+h1 {
+    font-size:1.8em;
+}
+h2 {
+    font-size:1.4em;
+}
+
+
+
+/* Aside */
+aside {
+    width:260px;
+    float:right;
+    border-left:1px dashed #aaa;
+    padding-left:15px;
+}
+/* Login */
+#login li.link {
+    margin-top:5px;
+}
+
+/* Misc */
+.clear {
+    clear:both;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#999;
+}
+
+/* IE 6 */
+* html #footer {
+   position:absolute;
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+}
+
+#footer a {
+    padding:10px;
+}
+
+#ads {
+	width: 240px;
+	margin: 0, auto;
+	float: left;
+}
